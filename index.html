@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kanye</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+  <h1>Kanye West Quotes</h1>
+
+  <img src="kanyepic.jpeg" alt="picture">
+
+  <div id="quote">No Quote</div>
+
+  <footer>
+    <a href="https://github.com/joeparis6/KanyeQuotes.git">https://github.com/joeparis6/KanyeQuotes.git</a>
+  </footer>
+</body>
+
+
+
+<script>
+  var myurl = "https://api.kanye.rest/";
+  console.log(myurl);
+  fetch(myurl)
+    .then(function(response) {
+      return response.json();
+    }).then(function(json) {
+      console.log(json);
+      document.getElementById("quote").innerHTML = json["quote"];
+    });
+</script>
+
+<footer>
+  <p><a href="https://github.com/joeparis6/KanyeQuotes.git"></p>
+</footer>
+
+</html>
