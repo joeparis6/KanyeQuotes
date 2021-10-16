@@ -12,8 +12,10 @@
 
   <img src="kanyepic.jpeg" alt="picture">
 
-  <div id="quote">No Quote</div>
-
+  <h2>
+    <div id="quote">No Quote</div>
+  </h2>
+  <button type="button" id="quoteButton" onclick="myFunction()">New Quote</button>
   <footer>
     <a href="https://github.com/joeparis6/KanyeQuotes.git">https://github.com/joeparis6/KanyeQuotes.git</a>
   </footer>
@@ -31,6 +33,14 @@
       console.log(json);
       document.getElementById("quote").innerHTML = json["quote"];
     });
+</script>
+
+
+
+<script>
+function myFunction() {
+  location.reload();
+}
 </script>
 
 <footer>
