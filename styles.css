@@ -5,6 +5,10 @@ body {
 
 h1, h2 {
   text-align: center;
+  border: 3px solid black;
+  border-length: 50px;
+  padding: 5px;
+  display: inline-block;
 }
 
 img {
